@@ -1,0 +1,149 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.ratingDiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.MuiToolbar-root.MuiToolbar-regular.css-r6ewbb-MuiToolbar-root {
+  display: flex;
+  justify-content: space-between;
+}
+.MuiInputBase-root.MuiInputBase-colorPrimary.css-1kcggdq-MuiInputBase-root {
+  border: 1px solid grey;
+  border-radius: 1rem;
+}
+
+.mainDivTv {
+  display: flex;
+  /* justify-content: space-between; */
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.mainDivTv .card > img {
+  width: 12rem;
+  height: 16rem;
+  padding: 1rem;
+}
+
+.cardMain {
+  margin: 1rem;
+}
+.detailsMain {
+  margin: 1rem;
+  display: flex;
+}
+.detailsMain > img {
+  margin: 0 1rem;
+  max-width: 25rem;
+  max-height: 27rem;
+}
+
+.searchbar {
+  border: 1px solid grey;
+  border-radius: 7px;
+}
+
+.searchbar > input {
+  border: none;
+}
+
+.searchbar > input:focus-visible {
+  border: none;
+  outline: none;
+}
+.ratingandpricediv {
+  display: flex;
+  justify-content: space-between;
+}
+.ratingandpricediv > p {
+  margin: 0;
+}
+.ratingandpricediv > p:nth-child(2) {
+  border-radius: 16px;
+  width: 3.5rem;
+  padding: 0 8px;
+  border: 1px solid green;
+  background: green;
+  color: #fff;
+}
+.detailsRate {
+  display: flex;
+}
+.detailsRating {
+  display: flex;
+  border-radius: 16px;
+  width: 3.5rem;
+  padding: 0 8px;
+  border: 1px solid green;
+  background: green;
+  color: #fff;
+}
+.numberRating {
+  margin-left: 1rem;
+}
+.btnPlaceorder {
+  width: 100%;
+  background: #fb641b;
+  border-radius: 0;
+}
+@media only screen and (max-width: 600px) {
+  .detailsMain {
+    flex-direction: column;
+  }
+  .detailsMain > img {
+    margin: 0;
+  }
+  .ratingDiv > p {
+    margin: 0;
+  }
+}
+@media only screen and (max-width: 517px) {
+  .cardMain img {
+    width: 8rem;
+  }
+  .cardMain {
+    margin: 0.4rem 0.6rem;
+  }
+  .mainDivTv {
+    justify-content: space-around;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
